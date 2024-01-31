@@ -15,9 +15,9 @@ public class DataRepository {
 	public DataRepository() {
 		// System.out.println("data repo const. is called");
 
-		String url = "jdbc:mysql://localhost:3306/data";
-		String username = "root";
-		String password = "student123";
+		String url = ""; // enter url here
+		String username = ""; // name of database user account
+		String password = ""; // password
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			connection = DriverManager.getConnection(url, username, password);
